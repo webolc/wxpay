@@ -1,0 +1,11 @@
+{
+    "name": "yangyongxu/wxpay",
+    "type": "library",
+    "authors": [
+        {
+            "name": "yangyongxu",
+            "email": "516705893@qq.com"
+        }
+    ],
+    "require": {}
+}
