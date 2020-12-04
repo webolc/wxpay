@@ -1,11 +1,11 @@
 <?php
 namespace yangyongxu\wxpay\server;
 
-use yangyongxu\wxpay\serverlib\WxPayApi;
-use yangyongxu\wxpay\serverlib\WxPayUnifiedOrder;
-use yangyongxu\wxpay\serverlib\WxPayException;
-use yangyongxu\wxpay\serverlib\WxPayJsApiPay;
-use yangyongxu\wxpay\serverlib\WxPayBizPayUrl;
+use yangyongxu\wxpay\server\lib\WxPayApi;
+use yangyongxu\wxpay\server\lib\WxPayUnifiedOrder;
+use yangyongxu\wxpay\server\lib\WxPayException;
+use yangyongxu\wxpay\server\lib\WxPayJsApiPay;
+use yangyongxu\wxpay\server\lib\WxPayBizPayUrl;
 
 require_once "lib/WxPay.Exception.php";
 require_once "lib/WxPay.Notify.php";

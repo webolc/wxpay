@@ -1,18 +1,19 @@
 <?php
 namespace yangyongxu\wxpay\server;
 
-use yangyongxu\wxpay\server\lib\WxPayConfigInterface;
 require_once "lib/WxPay.Config.Interface.php";
 /**
 * 实际部署，请务必保管自己的商户密钥，证书等
 */
-class WxPayConfig extends WxPayConfigInterface{
+class WxPayConfig{
 	
 	protected $config = [
 		'appid' => '',
-		'appsecret' => '',
-		'merchant_id' => '',
-		'merchant_key' => '',
+		'mch_id' => '',
+		'sub_appid' => '',
+		'sub_appsecret' => '',
+		'sub_mch_id' => '',
+		'sub_mch_key' => '',
 		'notify_url' => '',
 		'pay_path' => '',
 		'sign_type' => 'HMAC-SHA256'//支持HMAC-SHA256和MD5
@@ -39,7 +40,15 @@ class WxPayConfig extends WxPayConfigInterface{
 	}
 	public function GetMerchantId()
 	{
-		return $this->config['merchant_id'];
+		return $this->config['mch_id'];
+	}
+	public function GetSubAppId()
+	{
+		return $this->config['sub_appid'];
+	}
+	public function GetSubMerchantId()
+	{
+		return $this->config['sub_mch_id'];
 	}
 	//=======【支付相关配置：支付成功回调地址/签名方式】===================================
 	/**
@@ -94,11 +103,11 @@ class WxPayConfig extends WxPayConfigInterface{
 	 */
 	public function GetKey()
 	{
-		return $this->config['merchant_key'];
+		return $this->config['sub_mch_key'];
 	}
 	public function GetAppSecret()
 	{
-		return $this->config['appsecret'];
+		return $this->config['sub_appsecret'];
 	}
 
 
