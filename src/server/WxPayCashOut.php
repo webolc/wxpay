@@ -4,13 +4,6 @@ namespace yangyongxu\wxpay\server;
 use yangyongxu\wxpay\server\lib\WxPayException;
 use yangyongxu\wxpay\server\lib\WxPayCashOut AS CashOut;
 
-
-require_once "lib/WxPay.Exception.php";
-require_once "lib/WxPay.CashOut.php";
-require_once "lib/WxPay.Notify.php";
-require_once "lib/WxPay.Data.php";
-require_once "lib/WxPay.Api.php";
-
 class WxPayCashOut
 {
 	public $config;

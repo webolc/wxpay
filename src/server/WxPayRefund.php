@@ -6,11 +6,6 @@ use yangyongxu\wxpay\server\lib\WxPayUnifiedOrder;
 use yangyongxu\wxpay\server\lib\WxPayException;
 use yangyongxu\wxpay\server\lib\WxPayRefund AS Refund;
 
-require_once "lib/WxPay.Exception.php";
-require_once "lib/WxPay.Notify.php";
-require_once "lib/WxPay.Data.php";
-require_once "lib/WxPay.Api.php";
-
 class WxPayRefund
 {
 	public $config;

@@ -1,10 +1,6 @@
 <?php
 namespace yangyongxu\wxpay\server\lib;
 
-require_once "WxPay.Exception.php";
-require_once "WxPay.Config.Interface.php";
-require_once "WxPay.Data.php";
-
 /**
  * 提现
  * @author YYX

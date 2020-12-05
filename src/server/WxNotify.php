@@ -6,10 +6,6 @@ use yangyongxu\wxpay\server\lib\WxPayException;
 use yangyongxu\wxpay\server\lib\WxPayOrderQuery;
 use yangyongxu\wxpay\server\lib\WxPayApi;
 
-require_once "lib/WxPay.Exception.php";
-require_once "lib/WxPay.Notify.php";
-require_once "lib/WxPay.Data.php";
-require_once "lib/WxPay.Api.php";
 /**
  * 支付回调
  * @author YYX

@@ -1,7 +1,6 @@
 <?php
 namespace yangyongxu\wxpay\server;
 
-require_once "lib/WxPay.Config.Interface.php";
 /**
 * 实际部署，请务必保管自己的商户密钥，证书等
 */

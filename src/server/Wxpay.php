@@ -7,10 +7,6 @@ use yangyongxu\wxpay\server\lib\WxPayException;
 use yangyongxu\wxpay\server\lib\WxPayJsApiPay;
 use yangyongxu\wxpay\server\lib\WxPayBizPayUrl;
 
-require_once "lib/WxPay.Exception.php";
-require_once "lib/WxPay.Notify.php";
-require_once "lib/WxPay.Data.php";
-require_once "lib/WxPay.Api.php";
 /**
  * 支付基础类
  * @author YYX
