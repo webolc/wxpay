@@ -2,7 +2,7 @@
 namespace yangyongxu\wxpay\server;
 
 use yangyongxu\wxpay\server\lib\WxPayApi;
-use yangyongxu\wxpay\server\lib\WxPayUnifiedOrder;
+use yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder;
 use yangyongxu\wxpay\server\lib\WxPayException;
 use yangyongxu\wxpay\server\lib\WxPayJsApiPay;
 use yangyongxu\wxpay\server\lib\WxPayBizPayUrl;

@@ -1,5 +1,5 @@
 <?php
-namespace yangyongxu\wxpay\lib\data;
+namespace yangyongxu\wxpay\server\lib\data;
 
 /**
  * 

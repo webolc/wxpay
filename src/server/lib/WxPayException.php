@@ -1,5 +1,5 @@
 <?php
-namespace yangyongxu\wxpay\lib;
+namespace yangyongxu\wxpay\server\lib;
 /**
  * 
  * 微信支付API异常类
