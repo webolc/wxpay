@@ -1,6 +1,9 @@
 <?php
 namespace yangyongxu\wxpay\server\lib;
 
+use yangyongxu\wxpay\server\lib\data\WxPayResults;
+use yangyongxu\wxpay\server\lib\data\WxPayNotifyResults;
+use yangyongxu\wxpay\server\lib\data\WxPayReport;
 /**
  * 
  * 接口访问类，包含所有微信支付API列表的封装，类中方法为static方法，

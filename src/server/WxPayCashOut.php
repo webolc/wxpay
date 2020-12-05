@@ -79,13 +79,13 @@ class WxPayCashOut
 
         	$paybank->FromArray($data);
         	//签名
-        	$paybank->MakeSign($config);
+        	$paybank->MakeSign($this->config);
         	$xml = $paybank->ToXml();
         	
         	$startTimeStamp = CashOut::getMillisecond();//请求开始时间
-        	$response = CashOut::postXmlCurl($config, $xml, $url, false, $timeOut);
-        	$result = CashOut::Init($config, $response);
-        	self::reportCostTime($config, $url, $startTimeStamp, $result);//上报请求花费时间
+        	$response = CashOut::postXmlCurl($this->config, $xml, $url, false, $timeOut);
+        	$result = CashOut::Init($this->config, $response);
+        	self::reportCostTime($this->config, $url, $startTimeStamp, $result);//上报请求花费时间
         	return success('',$result);
        	} catch (WxPayException $e){
        		$msg = $e->errorMessage();

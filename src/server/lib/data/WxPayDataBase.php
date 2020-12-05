@@ -1,6 +1,8 @@
 <?php
 namespace yangyongxu\wxpay\server\lib\data;
 
+use yangyongxu\wxpay\server\lib\WxPayException;
+
 /**
  * 
  * 数据对象基础类，该类中定义数据类最基本的行为，包括：

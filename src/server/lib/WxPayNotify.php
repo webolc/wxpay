@@ -1,7 +1,8 @@
 <?php
 namespace yangyongxu\wxpay\server\lib;
 
-require_once "WxPay.Data.php";
+use yangyongxu\wxpay\server\lib\data\WxPayNotifyReply;
+
 /**
  * 
  * 回调基础类

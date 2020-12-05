@@ -1,6 +1,8 @@
 <?php
 namespace yangyongxu\wxpay\server\lib\data;
 
+use yangyongxu\wxpay\server\lib\WxPayException;
+
 /**
  * 
  * 接口调用结果类

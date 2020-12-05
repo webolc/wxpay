@@ -4,8 +4,8 @@ namespace yangyongxu\wxpay\server;
 use yangyongxu\wxpay\server\lib\WxPayApi;
 use yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder;
 use yangyongxu\wxpay\server\lib\WxPayException;
-use yangyongxu\wxpay\server\lib\WxPayJsApiPay;
-use yangyongxu\wxpay\server\lib\WxPayBizPayUrl;
+use yangyongxu\wxpay\server\lib\data\WxPayBizPayUrl;
+use yangyongxu\wxpay\server\lib\data\WxPayJsApiPay;
 
 /**
  * 支付基础类
@@ -32,6 +32,7 @@ class Wxpay{
 		$this->_setData($data,'JSAPI');
 		try {
 			$order = $this->basePay->unifiedOrder($this->config,$this->baseData);
+			dump($order);
 			if ($order['return_code'] == 'FAIL'){
 				return false;
 			}
@@ -45,6 +46,7 @@ class Wxpay{
 			$parameters = json_encode($jsapi->GetValues());
 			return $parameters;
 		} catch (WxPayException $e){
+			dump($e);
 			$msg = $e->errorMessage();
 			return false;
 		}

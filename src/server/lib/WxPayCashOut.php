@@ -1,6 +1,9 @@
 <?php
 namespace yangyongxu\wxpay\server\lib;
 
+use yangyongxu\wxpay\server\lib\data\WxPayResults;
+use yangyongxu\wxpay\server\lib\data\WxPayReport;
+
 /**
  * 提现
  * @author YYX
