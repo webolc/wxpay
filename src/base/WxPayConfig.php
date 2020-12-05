@@ -1,5 +1,5 @@
 <?php
-namespace yangyongxu\wxpay\server;
+namespace yangyongxu\wxpay\base;
 
 /**
 * 实际部署，请务必保管自己的商户密钥，证书等

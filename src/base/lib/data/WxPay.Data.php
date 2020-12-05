@@ -1,6 +1,6 @@
 <?php
 
-use yangyongxu\wxpay\server\lib\WxPayException;
+use yangyongxu\wxpay\base\lib\WxPayException;
 
 /**
  * 

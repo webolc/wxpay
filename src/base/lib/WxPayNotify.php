@@ -1,7 +1,7 @@
 <?php
-namespace yangyongxu\wxpay\server\lib;
+namespace yangyongxu\wxpay\base\lib;
 
-use yangyongxu\wxpay\server\lib\data\WxPayNotifyReply;
+use yangyongxu\wxpay\base\lib\data\WxPayNotifyReply;
 
 /**
  * 

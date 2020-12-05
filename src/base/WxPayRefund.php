@@ -1,10 +1,10 @@
 <?php
-namespace yangyongxu\wxpay\server;
+namespace yangyongxu\wxpay\base;
 
-use yangyongxu\wxpay\server\lib\WxPayApi;
-use yangyongxu\wxpay\server\lib\WxPayException;
-use yangyongxu\wxpay\server\lib\data\WxPayRefund AS Refund;
-use yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder;
+use yangyongxu\wxpay\base\lib\WxPayApi;
+use yangyongxu\wxpay\base\lib\WxPayException;
+use yangyongxu\wxpay\base\lib\data\WxPayRefund AS Refund;
+use yangyongxu\wxpay\base\lib\data\WxPayUnifiedOrder;
 
 class WxPayRefund
 {
@@ -15,7 +15,7 @@ class WxPayRefund
 	public function __construct($config){
 		$this->config = new WxPayConfig($config);
 		$this->basePay = new WxPayApi();
-		$this->baseData = new \yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder();
+		$this->baseData = new WxPayUnifiedOrder();
 	}
     /**
      * [订单退款]

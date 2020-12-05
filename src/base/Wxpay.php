@@ -1,11 +1,11 @@
 <?php
-namespace yangyongxu\wxpay\server;
+namespace yangyongxu\wxpay\base;
 
-use yangyongxu\wxpay\server\lib\WxPayApi;
-use yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder;
-use yangyongxu\wxpay\server\lib\WxPayException;
-use yangyongxu\wxpay\server\lib\data\WxPayBizPayUrl;
-use yangyongxu\wxpay\server\lib\data\WxPayJsApiPay;
+use yangyongxu\wxpay\base\lib\WxPayApi;
+use yangyongxu\wxpay\base\lib\data\WxPayUnifiedOrder;
+use yangyongxu\wxpay\base\lib\WxPayException;
+use yangyongxu\wxpay\base\lib\data\WxPayBizPayUrl;
+use yangyongxu\wxpay\base\lib\data\WxPayJsApiPay;
 
 /**
  * 支付基础类

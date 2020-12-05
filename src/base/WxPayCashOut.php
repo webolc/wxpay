@@ -1,8 +1,8 @@
 <?php
-namespace yangyongxu\wxpay\server;
+namespace yangyongxu\wxpay\base;
 
-use yangyongxu\wxpay\server\lib\WxPayException;
-use yangyongxu\wxpay\server\lib\WxPayCashOut AS CashOut;
+use yangyongxu\wxpay\base\lib\WxPayException;
+use yangyongxu\wxpay\base\lib\WxPayCashOut AS CashOut;
 
 class WxPayCashOut
 {

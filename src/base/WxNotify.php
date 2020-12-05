@@ -1,10 +1,10 @@
 <?php
-namespace yangyongxu\wxpay\server;
+namespace yangyongxu\wxpay\base;
 
-use yangyongxu\wxpay\server\lib\WxPayNotify;
-use yangyongxu\wxpay\server\lib\WxPayException;
-use yangyongxu\wxpay\server\lib\data\WxPayOrderQuery;
-use yangyongxu\wxpay\server\lib\WxPayApi;
+use yangyongxu\wxpay\base\lib\WxPayNotify;
+use yangyongxu\wxpay\base\lib\WxPayException;
+use yangyongxu\wxpay\base\lib\data\WxPayOrderQuery;
+use yangyongxu\wxpay\base\lib\WxPayApi;
 
 /**
  * 支付回调

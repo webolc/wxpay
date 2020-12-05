@@ -15,7 +15,7 @@ class WxPayRefund
 	public function __construct($config){
 		$this->config = new WxPayConfig($config);
 		$this->basePay = new WxPayApi();
-		$this->baseData = new \yangyongxu\wxpay\server\lib\data\WxPayUnifiedOrder();
+		$this->baseData = new WxPayUnifiedOrder();
 	}
     /**
      * [订单退款]
