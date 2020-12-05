@@ -32,7 +32,6 @@ class Wxpay{
 		$this->_setData($data,'JSAPI');
 		try {
 			$order = $this->basePay->unifiedOrder($this->config,$this->baseData);
-			dump($order);
 			if ($order['return_code'] == 'FAIL'){
 				return false;
 			}
@@ -46,7 +45,6 @@ class Wxpay{
 			$parameters = json_encode($jsapi->GetValues());
 			return $parameters;
 		} catch (WxPayException $e){
-			dump($e);
 			$msg = $e->errorMessage();
 			return false;
 		}
