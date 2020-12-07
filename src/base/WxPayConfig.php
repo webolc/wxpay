@@ -8,11 +8,9 @@ class WxPayConfig{
 	
 	protected $config = [
 		'appid' => '',
+		'appsecret' => '',
 		'mch_id' => '',
-		'sub_appid' => '',
-		'sub_appsecret' => '',
-		'sub_mch_id' => '',
-		'sub_mch_key' => '',
+		'mch_key' => '',
 		'notify_url' => '',
 		'pay_path' => '',
 		'sign_type' => 'HMAC-SHA256'//支持HMAC-SHA256和MD5
@@ -40,14 +38,6 @@ class WxPayConfig{
 	public function GetMerchantId()
 	{
 		return $this->config['mch_id'];
-	}
-	public function GetSubAppId()
-	{
-		return $this->config['sub_appid'];
-	}
-	public function GetSubMerchantId()
-	{
-		return $this->config['sub_mch_id'];
 	}
 	//=======【支付相关配置：支付成功回调地址/签名方式】===================================
 	/**
@@ -102,11 +92,11 @@ class WxPayConfig{
 	 */
 	public function GetKey()
 	{
-		return $this->config['sub_mch_key'];
+		return $this->config['mch_key'];
 	}
 	public function GetAppSecret()
 	{
-		return $this->config['sub_appsecret'];
+		return $this->config['appsecret'];
 	}
 
 

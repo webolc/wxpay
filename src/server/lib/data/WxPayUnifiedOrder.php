@@ -60,16 +60,17 @@ class WxPayUnifiedOrder extends WxPayDataBase
 		return array_key_exists('mch_id', $this->values);
 	}
 
+	
 	/**
 	 * 设置微信分配的公众账号ID
 	 * @param string $value
 	 **/
 	public function SetSubAppid($value)
 	{
-		$this->values['appid'] = $value;
+		$this->values['sub_appid'] = $value;
 	}
 	/**
-	 * 获取微信分配的子账号公众账号ID的值
+	 * 获取微信分配的公众账号ID的值
 	 * @return 值
 	 **/
 	public function GetSubAppid()
@@ -77,7 +78,7 @@ class WxPayUnifiedOrder extends WxPayDataBase
 		return $this->values['sub_appid'];
 	}
 	/**
-	 * 判断微信分配的子账号公众账号ID是否存在
+	 * 判断微信分配的公众账号ID是否存在
 	 * @return true 或 false
 	 **/
 	public function IsSubAppidSet()
@@ -85,11 +86,12 @@ class WxPayUnifiedOrder extends WxPayDataBase
 		return array_key_exists('sub_appid', $this->values);
 	}
 	
+	
 	/**
-	 * 设置微信支付分配的子账号商户号
+	 * 设置微信支付分配的商户号
 	 * @param string $value
 	 **/
-	public function SetSub_mch_id($value)
+	public function SetSubMch_id($value)
 	{
 		$this->values['sub_mch_id'] = $value;
 	}
@@ -97,19 +99,20 @@ class WxPayUnifiedOrder extends WxPayDataBase
 	 * 获取微信支付分配的商户号的值
 	 * @return 值
 	 **/
-	public function GetSub_mch_id()
+	public function GetSubMch_id()
 	{
 		return $this->values['sub_mch_id'];
 	}
 	/**
-	 * 判断微信支付分配的子账号商户号是否存在
+	 * 判断微信支付分配的商户号是否存在
 	 * @return true 或 false
 	 **/
-	public function IsSub_mch_idSet()
+	public function IsSubMch_idSet()
 	{
 		return array_key_exists('sub_mch_id', $this->values);
 	}
-
+	
+	
 	/**
 	* 设置微信支付分配的终端设备号，商户自定义
 	* @param string $value 
@@ -522,5 +525,30 @@ class WxPayUnifiedOrder extends WxPayDataBase
 	public function IsOpenidSet()
 	{
 		return array_key_exists('openid', $this->values);
+	}
+	
+	/**
+	 * 设置trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识。下单前需要调用【网页授权获取用户信息】接口获取到用户的Openid。
+	 * @param string $value
+	 **/
+	public function SetSubOpenid($value)
+	{
+		$this->values['sub_openid'] = $value;
+	}
+	/**
+	 * 获取trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识。下单前需要调用【网页授权获取用户信息】接口获取到用户的Openid。 的值
+	 * @return 值
+	 **/
+	public function GetSubOpenid()
+	{
+		return $this->values['sub_openid'];
+	}
+	/**
+	 * 判断trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识。下单前需要调用【网页授权获取用户信息】接口获取到用户的Openid。 是否存在
+	 * @return true 或 false
+	 **/
+	public function IsSubOpenidSet()
+	{
+		return array_key_exists('sub_openid', $this->values);
 	}
 }

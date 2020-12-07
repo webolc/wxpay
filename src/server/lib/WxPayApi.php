@@ -44,8 +44,8 @@ class WxPayApi
 		}
 		
 		//关联参数
-		if($inputObj->GetTrade_type() == "JSAPI" && !$inputObj->IsOpenidSet()){
-			throw new WxPayException("统一支付接口中，缺少必填参数openid！trade_type为JSAPI时，openid为必填参数！");
+		if($inputObj->GetTrade_type() == "JSAPI" && (!$inputObj->IsOpenidSet() || !$inputObj->IsOpenidSet())){
+			throw new WxPayException("统一支付接口中，缺少必填参数openid！trade_type为JSAPI时，openid或sub_openid为必填参数！");
 		}
 		if($inputObj->GetTrade_type() == "NATIVE" && !$inputObj->IsProduct_idSet()){
 			throw new WxPayException("统一支付接口中，缺少必填参数product_id！trade_type为JSAPI时，product_id为必填参数！");
@@ -58,8 +58,8 @@ class WxPayApi
 		
 		$inputObj->SetAppid($config->GetAppId());//公众账号ID
 		$inputObj->SetMch_id($config->GetMerchantId());//商户号
-		$inputObj->SetSubAppid($config->GetSubAppId());//子账号公众账号ID
-		$inputObj->SetSub_mch_id($config->GetSubMerchantId());//子账号商户号
+		$inputObj->SetSubAppid($config->GetSubAppId());//公众账号ID
+		$inputObj->SetSubMch_id($config->GetSubMerchantId());//商户号
 		$inputObj->SetSpbill_create_ip($_SERVER['REMOTE_ADDR']);//终端ip	   	    
 		$inputObj->SetNonce_str(self::getNonceStr());//随机字符串
 		

@@ -45,7 +45,6 @@ class Wxpay{
 			$parameters = json_encode($jsapi->GetValues());
 			return $parameters;
 		} catch (WxPayException $e){
-			$msg = $e->errorMessage();
 			return false;
 		}
 	}
